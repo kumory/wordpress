@@ -1,0 +1,145 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "3cbb1e81-82c5-4039-8222-beb005b99c13",
+			"name": "prueba de conexion api woocommerce",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"347f8759-a104-4b88-9b3d-64975f0cda20",
+				"03cfd826-f46e-4e3a-a701-dc34f2db0a35"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"folders": [],
+			"requests": [
+				{
+					"id": "03cfd826-f46e-4e3a-a701-dc34f2db0a35",
+					"name": "prueba uno de creacion de producto mediante postman",
+					"url": "http://localhost/wordpress_ejemplo/wp-json/wc/v3/products",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "oauth1",
+						"oauth1": [
+							{
+								"key": "consumerKey",
+								"value": "ck_251d8fde6bfe9a8d85fae0a916a7c6b2ba1e9c1d"
+							},
+							{
+								"key": "consumerSecret",
+								"value": "cs_65d1ff3466a17df890851c8e4cddc093dd8e24dc"
+							},
+							{
+								"key": "signatureMethod",
+								"value": "HMAC-SHA1"
+							},
+							{
+								"key": "version",
+								"value": "1.0"
+							},
+							{
+								"key": "addParamsToHeader",
+								"value": false
+							},
+							{
+								"key": "addEmptyParamsToSign",
+								"value": false
+							}
+						]
+					},
+					"events": null,
+					"folder": null,
+					"currentHelper": "oAuth1",
+					"helperAttributes": {
+						"id": "oAuth1",
+						"consumerKey": "ck_251d8fde6bfe9a8d85fae0a916a7c6b2ba1e9c1d",
+						"consumerSecret": "cs_65d1ff3466a17df890851c8e4cddc093dd8e24dc",
+						"signatureMethod": "HMAC-SHA1",
+						"version": "1.0",
+						"header": false,
+						"includeEmpty": false
+					},
+					"collectionId": "3cbb1e81-82c5-4039-8222-beb005b99c13",
+					"rawModeData": "<?php\r\n$data = [\r\n    'name' => 'Premium Quality',\r\n    'type' => 'simple',\r\n    'regular_price' => '21.99',\r\n    'description' => 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',\r\n    'short_description' => 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',\r\n    'categories' => [\r\n        [\r\n            'id' => 9\r\n        ],\r\n        [\r\n            'id' => 14\r\n        ]\r\n    ],\r\n    'images' => [\r\n        [\r\n            'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_front.jpg'\r\n        ],\r\n        [\r\n            'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_back.jpg'\r\n        ]\r\n    ]\r\n];\r\n\r\nprint_r($woocommerce->post('products', $data));\r\n?>",
+					"pathVariables": {}
+				},
+				{
+					"id": "347f8759-a104-4b88-9b3d-64975f0cda20",
+					"name": "prueba uno de creacion de producto mediante postman",
+					"url": "http://localhost/wordpress_ejemplo/wp-json/wc/v3/products",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "oauth1",
+						"oauth1": [
+							{
+								"key": "consumerKey",
+								"value": "ck_251d8fde6bfe9a8d85fae0a916a7c6b2ba1e9c1d"
+							},
+							{
+								"key": "consumerSecret",
+								"value": "cs_65d1ff3466a17df890851c8e4cddc093dd8e24dc"
+							},
+							{
+								"key": "signatureMethod",
+								"value": "HMAC-SHA1"
+							},
+							{
+								"key": "version",
+								"value": "1.0"
+							},
+							{
+								"key": "addParamsToHeader",
+								"value": false
+							},
+							{
+								"key": "addEmptyParamsToSign",
+								"value": false
+							}
+						]
+					},
+					"events": null,
+					"folder": null,
+					"currentHelper": "oAuth1",
+					"helperAttributes": {
+						"id": "oAuth1",
+						"consumerKey": "ck_251d8fde6bfe9a8d85fae0a916a7c6b2ba1e9c1d",
+						"consumerSecret": "cs_65d1ff3466a17df890851c8e4cddc093dd8e24dc",
+						"signatureMethod": "HMAC-SHA1",
+						"version": "1.0",
+						"header": false,
+						"includeEmpty": false
+					},
+					"collectionId": "3cbb1e81-82c5-4039-8222-beb005b99c13",
+					"rawModeData": "<?php\r\n$data = [\r\n    'name' => 'Premium Quality',\r\n    'type' => 'simple',\r\n    'regular_price' => '21.99',\r\n    'description' => 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',\r\n    'short_description' => 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',\r\n    'categories' => [\r\n        [\r\n            'id' => 9\r\n        ],\r\n        [\r\n            'id' => 14\r\n        ]\r\n    ],\r\n    'images' => [\r\n        [\r\n            'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_front.jpg'\r\n        ],\r\n        [\r\n            'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_back.jpg'\r\n        ]\r\n    ]\r\n];\r\n\r\nprint_r($woocommerce->post('products', $data));\r\n?>",
+					"pathVariables": {}
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "0eabce9b-567e-4f88-9ab3-b457cd9d148c",
+			"name": "My Workspace - globals",
+			"values": []
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}
